@@ -52,7 +52,7 @@ def matrix_norm(A):
 # =========================
 def simple_iteration(A, b, x0, eps=1e-14, max_iter=10000):
     n = len(b)
-    tau = 1.0 / matrix_norm(A)  # стабільний вибір
+    tau = 1 / matrix_norm(A)  # стабільний вибір
 
     C = np.eye(n) - tau * A
     d = tau * b

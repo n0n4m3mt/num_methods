@@ -18,7 +18,7 @@ def exact_integral():
     y = f(x)
     def trapz_manual(x, y):
         return np.sum((y[:-1] + y[1:]) * (x[1:] - x[:-1]) / 2)
-    return trapz_manual(y, x)
+    return trapz_manual(x, y)
 
 I_exact = exact_integral()
 
